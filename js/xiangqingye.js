@@ -1,5 +1,5 @@
 /**
- * Created by ������ on 2018/3/16.
+ * Created by ������ on 2018/3/16.
  */
 /*----------------xxk-------------------*/
 function li1(){
@@ -37,3 +37,11 @@ function li5(){
     document.getElementById("main3").style.display="none";
     document.getElementById("main4").style.display="none";
 }
+//////////////////////////////////////////////////
+/*$(function(){
+    $(".jqzoom").jqueryzoom({
+        xzoom:500,/!*放大的图片大小*!/
+        yzoom:480,
+        offset:50/!*大图与小图之间的距离*!/
+    });
+})*/
