@@ -20,3 +20,15 @@ $(".ul1 li").mouseout(function () {
     time = setInterval(run, 1500)
 });
 ///////////////////////////////////////////
+$(function(){
+    $("#header-left .li ").mouseenter(function () {
+        $(this).stop().children("ul").slideDown(200)
+    }).mouseleave(function () {
+        $(this).stop().children("ul").slideUp(200)
+    });
+    $("#header-right .li ").mouseenter(function () {
+        $(this).stop().children("ul").slideDown(200)
+    }).mouseleave(function () {
+        $(this).stop().children("ul").slideUp(200)
+    });
+})

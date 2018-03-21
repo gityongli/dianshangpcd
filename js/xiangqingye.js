@@ -38,10 +38,15 @@ function li5(){
     document.getElementById("main4").style.display="none";
 }
 //////////////////////////////////////////////////
-/*$(function(){
-    $(".jqzoom").jqueryzoom({
-        xzoom:500,/!*放大的图片大小*!/
-        yzoom:480,
-        offset:50/!*大图与小图之间的距离*!/
+$(function(){
+    $("#header-left .li ").mouseenter(function () {
+        $(this).stop().children("ul").slideDown(200)
+    }).mouseleave(function () {
+        $(this).stop().children("ul").slideUp(200)
     });
-})*/
+    $("#header-right .li ").mouseenter(function () {
+        $(this).stop().children("ul").slideDown(200)
+    }).mouseleave(function () {
+        $(this).stop().children("ul").slideUp(200)
+    });
+})

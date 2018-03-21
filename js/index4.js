@@ -26,5 +26,18 @@ $(".main-bg3 .ul5 li").hover(function(){
 },function(){
     $(this).find("span").animate({marginTop:"0px"},300)
 });
+/////////////////////////////////////////
+$(function(){
+    $("#header-left .li ").mouseenter(function () {
+        $(this).stop().children("ul").slideDown(200)
+    }).mouseleave(function () {
+        $(this).stop().children("ul").slideUp(200)
+    });
+    $("#header-right .li ").mouseenter(function () {
+        $(this).stop().children("ul").slideDown(200)
+    }).mouseleave(function () {
+        $(this).stop().children("ul").slideUp(200)
+    });
+})
 
 
