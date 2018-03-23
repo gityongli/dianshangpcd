@@ -3,214 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <title>海尔-空调</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="css/jqzoom.css"/>
     <link rel="stylesheet" href="css/index4.css">
     <link rel="stylesheet" href="css/style.css"/>
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.kxbdmarquee.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/index4.js"></script>
 </head>
 <body>
-<!--header部分开始-->
-<header>
-    <div class="head">
-        <img src="img/head1.jpg" alt=""/>
-    </div>
-</header>
-<!--header部分结束-->
 <!--导航开始-->
-<nav>
-    <div id="header-bg">
-        <div id="header">
-            <div id="header-left">
-                <ul class="ul">
-                    <li class="li"><a href="#">海尔首页</a></li>
-                    <li class="li">
-                        <a href="#">网站导航</a>
-                        <ul class="ul2" id="ul2">
-                            <li><a href="#">特色购物</a></li>
-                            <li><a href="#">主题频道</a></li>
-                            <li><a href="#">生活助手</a></li>
-                            <li><a href="#">会员服务</a></li>
-                            <li><a href="#">更多热点</a></li>
-                        </ul>
-                    </li>
-                    <li class="li">
-                        <a href="#">合作招商</a>
-                        <ul class="ul2">
-                            <li><a href="#">金融中心</a></li>
-                            <li><a href="#">培训中心</a></li>
-                            <li><a href="#">规划中心</a></li>
-                            <li><a href="#">服务市场</a></li>
-                            <li><a href="#">商家论坛</a></li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="#">客户服务</a>
-                        <ul class="ul2">
-                            <li><a href="#">查找门店</a></li>
-                            <li><a href="#">建议反馈</a></li>
-                            <li><a href="#">在线咨询</a></li>
-                            <li><a href="#">帮助中心</a></li>
-                            <li><a href="#">30天包退</a></li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="#">沧州</a>
-                        <ul class="ul2">
-                            <li><a href="#">河北</a></li>
-                            <li><a href="#">石家庄</a></li>
-                            <li><a href="#">唐山</a></li>
-                            <li><a href="#">秦皇岛</a></li>
-                            <li><a href="#">邯郸</a></li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="denglu.html">请登录</a></li>
-                    <li class="li"><a href="zhuce.html">注册</a></li>
-                    <li class="li"><a href="#">我的订单</a>
-                        <ul class="ul2">
-                            <li>待支付</li>
-                            <li>待收款</li>
-                            <li>待评价</li>
-                            <li>修改订单</li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="#">智慧生活</a>
-                        <ul class="ul2">
-                            <li>智慧海尔</li>
-                            <li>智慧家庭</li>
-                            <li>智慧咨询</li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="#">苏宁会员</a></li>
-                    <li class="li"><a href="#">易付宝</a></li>
-                    <li class="li"><a href="#">手机苏宁</a>
-                        <ul class="ul2" id="ftx">
-                            <li>
-                                <img src="img/erweima1.png" alt="" class="app"/>
-                                <img src="img/erweima2.png" alt="" class="app"/>
-                                <img src="img/erweima3.jpg" alt="" class="app"/>
-                            </li>
-                        </ul>
-                    </li>
+<nav role="navigation" class="navbar navbar-default <!--navbar-fixed-top-->">
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-globe"></span></a>
+    </div>
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">海尔首页</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">网站导航<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">主题频道</a></li>
+                    <li><a href="#">生活助手</a></li>
+                    <li><a href="#">会员服务</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">更多热点</a></li>
                 </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">合作招商<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">金融中心</a></li>
+                    <li><a href="#">培训中心</a></li>
+                    <li><a href="#">规划中心</a></li>
+                    <li><a href="#">服务市场</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">商家论坛</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">客户服务<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">查找门店</a></li>
+                    <li><a href="#">建议反馈</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">30天包退</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">商家论坛</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">个人与家用产品<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">电视</a></li>
+                    <li><a href="#">冰箱</a></li>
+                    <li><a href="#">空调</a></li>
+                    <li><a href="#">洗衣机</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">热水器</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">沧州<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">河北</a></li>
+                    <li><a href="#">石家庄</a></li>
+                    <li><a href="#">唐山</a></li>
+                    <li><a href="#">秦皇岛</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">邯郸</a></li>
+                </ul>
+            </li>
+            <li><a href="denglu.html">请登录</a></li>
+            <li><a href="zhuce.html">注册</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">我的订单<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">待支付</a></li>
+                    <li><a href="#">待收款</a></li>
+                    <li><a href="#">待评价</a></li>
+                    <li><a href="#">修改订单</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">购物车</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">智慧生活<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">智慧海尔</a></li>
+                    <li><a href="#">智慧家庭</a></li>
+                    <li><a href="#">智慧咨询</a></li>
+                    <li><a href="#">智慧订购</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">加入购物车</a></li>
+                </ul>
+            </li>
+            <li><a href="#">苏宁会员</a></li>
+            <li><a href="#">易付宝</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">手机苏宁<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#"><img src="img/erweima1.png" alt="" class="app"/></a></li>
+                    <li><a href="#"><img src="img/erweima2.png" alt="" class="app"/></a></li>
+                    <li><a href="#"><img src="img/erweima3.jpg" alt="" class="app"/></a></li>
+                </ul>
+            </li>
+        </ul>
+        <form action="#" method="post" role="search" class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" placeholder="Search Here" class="form-control">
             </div>
-        </div>
+        </form>
     </div>
 </nav>
 <!--导航结束-->
 <!--轮播开始-->
-<div id="banner-bg">
-    <ul class="img">
-        <li><img src="img/kongtiaolb1.png" alt=""></li>
-        <li><img src="img/kongtiaolb2.png" alt=""></li>
-        <li><img src="img/kongtiaolb3.png" alt=""></li>
-        <li><img src="img/kongtiaolb4.png" alt=""></li>
-    </ul>
+<link rel="stylesheet" href="css/swiper.min.css">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/kongtiaolb1.png" alt=""/></div>
+                    <div class="swiper-slide"><img src="img/kongtiaolb2.png" alt=""/></div>
+                    <div class="swiper-slide"><img src="img/kongtiaolb3.png" alt=""/></div>
+                    <div class="swiper-slide"><img src="img/kongtiaolb4.png" alt=""/></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
 </div>
-<ul class="ul1">
-    <li class="li1"><a href="#"></a></li>
-    <li><a href="#"></a></li>
-    <li><a href="#"></a></li>
-    <li><a href="#"></a></li>
-</ul>
 <!--轮播结束-->
-<div class="tit">
-    <h1>空调专区</h1>
-</div>
-<div class="main-bg">
-    <div class="main">
-        <ul>
+<div class="container">
+    <div class="one row">
+        <ul class="list-unstyled">
             <li><a href="index2.html">电视</a></li>
             <li><a href="index3.html">冰箱</a></li>
             <li><a href="index4.html">空调</a></li>
             <li><a href="index5.html">洗衣机</a></li>
             <li><a href="index6.html">热水器</a></li>
         </ul>
-        <div class="hover" id="hover"></div>
     </div>
-    <div class="main-bg1">
-        <div class="main1" id="main3">
-            <ul class="ul3">
-                <li>
-                    <img src="img/kongtiao1.jpg" alt="">
-                    <p class="p6">手机APP智控 品质压缩机</p>
-                    <p class="p7">品质保障 送装同步 全国联保</p>
-                    <p class="p8">参考价:￥3499<span class="span1">有货</span></p>
-                </li>
-                <li>
-                    <img src="img/kongtiao2.jpg" alt="">
-                    <p class="p6">手机APP遥控一键PMV</p>
-                    <p class="p7">货到付款 乡镇村可达</p>
-                    <p class="p8">参考价:￥2299<span class="span1">在售</span></p>
-                </li>
-                <li>
-                    <img src="img/kongtiao3.jpg" alt="">
-                    <p class="p6">手机APP智控 品质压缩机</p>
-                    <p class="p7">品质保障 送装同步 全国联保</p>
-                    <p class="p8">参考价:￥3499<span class="span1">有货</span></p>
-                </li>
-                <li>
-                    <img src="img/kongtiao4.jpg" alt="">
-                    <p class="p6">手机APP遥控一键PMV</p>
-                    <p class="p7">货到付款 乡镇村可达</p>
-                    <p class="p8">参考价:￥2299<span class="span1">在售</span></p>
-                </li>
-                <li>
-                    <img src="img/kongtiao5.jpg" alt="">
-                    <p class="p6">手机APP智控 品质压缩机</p>
-                    <p class="p7">品质保障 送装同步 全国联保</p>
-                    <p class="p8">参考价:￥3499<span class="span1">有货</span></p>
-                </li>
-                <li>
-                    <img src="img/kongtiao6.jpg" alt="">
-                    <p class="p6">手机APP遥控一键PMV</p>
-                    <p class="p7">货到付款 乡镇村可达</p>
-                    <p class="p8">参考价:￥2299<span class="span1">在售</span></p>
-                </li>
-                <li>
-                    <img src="img/kongtiao7.jpg" alt="">
-                    <p class="p6">手机APP智控 品质压缩机</p>
-                    <p class="p7">品质保障 送装同步 全国联保</p>
-                    <p class="p8">参考价:￥3499<span class="span1">有货</span></p>
-                </li>
-                <li>
-                    <img src="img/kongtiao8.jpg" alt="">
-                    <p class="p6">手机APP遥控一键PMV</p>
-                    <p class="p7">货到付款 乡镇村可达</p>
-                    <p class="p8">参考价:￥2299<span class="span1">在售</span></p>
-                </li>
-                <li>
-                    <img src="img/kongtiao9.jpg" alt="">
-                    <p class="p6">手机APP智控 品质压缩机</p>
-                    <p class="p7">品质保障 送装同步 全国联保</p>
-                    <p class="p8">参考价:￥3499<span class="span1">有货</span></p>
-                </li>
-                <li>
-                    <img src="img/kongtiao10.jpg" alt="">
-                    <p class="p6">手机APP遥控一键PMV</p>
-                    <p class="p7">货到付款 乡镇村可达</p>
-                    <p class="p8">参考价:￥2299<span class="span1">在售</span></p>
-                </li>
-            </ul>
+</div>
+<div id="banner5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img src="img/kongtiaojk.png" alt=""/>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <h5 class="h5">智能FIFI操控</h5>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <h5>PMV舒适技术</h5>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <h5>智能除PM2.5</h5>
+            </div>
         </div>
-
     </div>
 </div>
-<div class="main-bg2">
-    <ul class="ul4">
-        <li><img src="img/kongtiaojk.png" alt=""/></li>
-        <li>
-            <p class="p10">智能FIFI操控</p>
-        </li>
-        <li>
-            <p class="p10">PMV舒适技术</p>
-        </li>
-        <li>
-            <p class="p10">智能除PM2.5</p>
-        </li>
-    </ul>
-</div>
-<div class="main-bg3">
-    <ul class="ul5">
-        <li class="li5">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="box">
                 <div class="he_slideCaptionDown">
                     <img class="he_slideCaptionDown_img" src="img/kongtiaohome1.jpg" alt="Image 01">
@@ -221,8 +187,8 @@
                     </div>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="box">
                 <div class="he_slideCaptionDown">
                     <img class="he_slideCaptionDown_img" src="img/kongtiaohome2.jpg" alt="Image 01">
@@ -233,8 +199,8 @@
                     </div>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="box">
                 <div class="he_slideCaptionDown">
                     <img class="he_slideCaptionDown_img" src="img/kongtiaohome3.jpg" alt="Image 01">
@@ -245,80 +211,229 @@
                     </div>
                 </div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="box1">
+                        <img src="img/kongtiao1.jpg" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <p class="p6">手机APP智控 品质压缩机</p>
+
+                        <p class="p7">品质保障 送装同步 全国联保</p>
+
+                        <p class="p8">参考价:￥3499<span class="span1">有货</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="box1">
+                        <img src="img/kongtiao2.jpg" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <p class="p6">手机APP遥控一键PMV</p>
+
+                        <p class="p7">货到付款 乡镇村可达</p>
+
+                        <p class="p8">参考价:￥2299<span class="span1">在售</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="box1">
+                        <img src="img/kongtiao3.jpg" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <p class="p6">手机APP智控 品质压缩机</p>
+
+                        <p class="p7">品质保障 送装同步 全国联保</p>
+
+                        <p class="p8">参考价:￥3499<span class="span1">有货</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="box1">
+                        <img src="img/kongtiao4.jpg" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <p class="p6">手机APP遥控一键PMV</p>
+
+                        <p class="p7">货到付款 乡镇村可达</p>
+
+                        <p class="p8">参考价:￥2299<span class="span1">在售</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="box1">
+                        <img src="img/kongtiao5.jpg" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <p class="p6">手机APP智控 品质压缩机</p>
+
+                        <p class="p7">品质保障 送装同步 全国联保</p>
+
+                        <p class="p8">参考价:￥3499<span class="span1">有货</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="box1">
+                        <img src="img/kongtiao6.jpg" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <p class="p6">手机APP遥控一键PMV</p>
+
+                        <p class="p7">货到付款 乡镇村可达</p>
+
+                        <p class="p8">参考价:￥2299<span class="span1">在售</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="box1">
+                        <img src="img/kongtiao7.jpg" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <p class="p6">手机APP智控 品质压缩机</p>
+
+                        <p class="p7">品质保障 送装同步 全国联保</p>
+
+                        <p class="p8">参考价:￥3499<span class="span1">有货</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="box1">
+                        <img src="img/kongtiao8.jpg" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <p class="p6">手机APP遥控一键PMV</p>
+
+                        <p class="p7">货到付款 乡镇村可达</p>
+
+                        <p class="p8">参考价:￥2299<span class="span1">在售</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <footer>
-    <div class="foot">
-        <ul class="fu">
-            <li class="fl"><a href="#">冰箱冷柜</a></li>
-            <li><a href="#">单门冰箱</a></li>
-            <li><a href="#">双门冰箱</a></li>
-            <li><a href="#">对开门冰箱</a></li>
-            <li><a href="#">十字对开门冰箱</a></li>
-            <li><a href="#">立式冷柜</a></li>
-            <li><a href="#">卧式冷柜</a></li>
-            <li><a href="#">展示柜</a></li>
-            <li><a href="#">冰吧</a></li>
-            <li><a href="#">酒柜</a></li>
-            <li><a href="#">微酒库</a></li>
-        </ul>
-        <ul class="fu">
-            <li class="fl"><a href="#">洗衣机专区</a></li>
-            <li><a href="#">滚筒洗衣机</a></li>
-            <li><a href="#">波轮洗衣机</a></li>
-            <li><a href="#">干衣机</a></li>
-            <li class="fl"><a href="#">空调专区</a></li>
-            <li><a href="#">壁挂式空调</a></li>
-            <li><a href="#">柜式空调</a></li>
-            <li><a href="#">家用中央空调</a></li>
-            <li><a href="#">保湿机</a></li>
-            <li><a href="#">移动空调</a></li>
-            <li><a href="#">中央空调</a></li>
-        </ul>
-        <ul class="fu">
-            <li class="fl"><a href="#">热水器专区</a></li>
-            <li><a href="#">电热水器</a></li>
-            <li><a href="#">燃气热水器</a></li>
-            <li><a href="#">太阳能热水器</a></li>
-            <li><a href="#">采暖炉</a></li>
-            <li><a href="#">空气能热水器</a></li>
-            <li class="fl"><a href="#">电视专区</a></li>
-            <li><a href="#">曲面电视</a></li>
-            <li><a href="#">4k高清电视</a></li>
-            <li><a href="#">智能电视</a></li>
-            <li><a href="#">蓝光电视</a></li>
-        </ul>
-        <ul class="fu">
-            <li class="fl"><a href="#">智慧家电专区</a></li>
-            <li><a href="#">大家电</a></li>
-            <li><a href="#">居家产品</a></li>
-            <li><a href="#">空气产品</a></li>
-            <li class="fl"><a href="#">大家电</a></li>
-            <li><a href="#">智能冰箱</a></li>
-            <li><a href="#">智能空调</a></li>
-            <li><a href="#">智能烤箱</a></li>
-            <li><a href="#">智能洗衣机</a></li>
-            <li><a href="#">智能热水器</a></li>
-            <li><a href="#">微酒库</a></li>
-        </ul>
-        <ul class="fu">
-            <li class="fl"><a href="#">商业解决方案</a></li>
-            <li><a href="#">中央空调</a></li>
-            <li><a href="#">商用电视</a></li>
-            <li><a href="#">商用洗涤</a></li>
-            <li><a href="#">商用电脑</a></li>
-            <li><a href="#">生物医疗</a></li>
-            <li><a href="#">U-home</a></li>
-            <li><a href="#">商用净水设备</a></li>
-            <li><a href="#">商用热泵</a></li>
-            <li><a href="#">海尔地产</a></li>
-            <li><a href="#">海尔热门</a></li>
-        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">冰箱冷柜</a></li>
+                    <li><a href="#">单门冰箱</a></li>
+                    <li><a href="#">双门冰箱</a></li>
+                    <li><a href="#">对开门冰箱</a></li>
+                    <li><a href="#">十字对开门冰箱</a></li>
+                    <li><a href="#">立式冷柜</a></li>
+                    <li><a href="#">卧式冷柜</a></li>
+                    <li><a href="#">展示柜</a></li>
+                    <li><a href="#">冰吧</a></li>
+                    <li><a href="#">酒柜</a></li>
+                    <li><a href="#">微酒库</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">洗衣机专区</a></li>
+                    <li><a href="#">滚筒洗衣机</a></li>
+                    <li><a href="#">波轮洗衣机</a></li>
+                    <li><a href="#">干衣机</a></li>
+                    <li class="fl"><a href="#">空调专区</a></li>
+                    <li><a href="#">壁挂式空调</a></li>
+                    <li><a href="#">柜式空调</a></li>
+                    <li><a href="#">家用中央空调</a></li>
+                    <li><a href="#">保湿机</a></li>
+                    <li><a href="#">移动空调</a></li>
+                    <li><a href="#">中央空调</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">热水器专区</a></li>
+                    <li><a href="#">电热水器</a></li>
+                    <li><a href="#">燃气热水器</a></li>
+                    <li><a href="#">太阳能热水器</a></li>
+                    <li><a href="#">采暖炉</a></li>
+                    <li><a href="#">空气能热水器</a></li>
+                    <li class="fl"><a href="#">电视专区</a></li>
+                    <li><a href="#">曲面电视</a></li>
+                    <li><a href="#">4k高清电视</a></li>
+                    <li><a href="#">智能电视</a></li>
+                    <li><a href="#">蓝光电视</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">智慧家电专区</a></li>
+                    <li><a href="#">大家电</a></li>
+                    <li><a href="#">居家产品</a></li>
+                    <li><a href="#">空气产品</a></li>
+                    <li class="fl"><a href="#">大家电</a></li>
+                    <li><a href="#">智能冰箱</a></li>
+                    <li><a href="#">智能空调</a></li>
+                    <li><a href="#">智能烤箱</a></li>
+                    <li><a href="#">智能洗衣机</a></li>
+                    <li><a href="#">智能热水器</a></li>
+                    <li><a href="#">微酒库</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">商业解决方案</a></li>
+                    <li><a href="#">中央空调</a></li>
+                    <li><a href="#">商用电视</a></li>
+                    <li><a href="#">商用洗涤</a></li>
+                    <li><a href="#">商用电脑</a></li>
+                    <li><a href="#">生物医疗</a></li>
+                    <li><a href="#">U-home</a></li>
+                    <li><a href="#">商用净水设备</a></li>
+                    <li><a href="#">商用热泵</a></li>
+                    <li><a href="#">海尔地产</a></li>
+                    <li><a href="#">海尔热门</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">服务</a></li>
+                    <li><a href="#">认证产品</a></li>
+                    <li><a href="#">预约安装</a></li>
+                    <li><a href="#">在线报修</a></li>
+                    <li><a href="#">特色服务</a></li>
+                    <li><a href="#">服务状态查询</a></li>
+                    <li><a href="#">海尔服务店</a></li>
+                    <li><a href="#">海尔专卖店</a></li>
+                    <li><a href="#">智慧家庭体验店</a></li>
+                    <li><a href="#">应用中心</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>
-<div class="footer">
-    <div class="foot1">
+<div class="footer1">
+    <div class="foot1 container">
         <p>
             <a href="#">关于海尔</a>
             <a href="#">品牌专区</a>
@@ -330,5 +445,18 @@
         </p>
     </div>
 </div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: true,
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+    })
+</script>
 </body>
 </html>

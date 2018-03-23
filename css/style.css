@@ -682,7 +682,7 @@
 
 .he_ZoomOutImg {
     background: #fe7253;
-    width: 360px;
+    width: 290px;
     height: 240px;
     padding: 0;
     margin: 0;
@@ -801,7 +801,7 @@
 
 .he_slideCaptionDown {
     background: #fe7253;
-    width: 360px;
+    width: 311px;
     height: 240px;
     padding: 0;
     margin: 0;
@@ -824,7 +824,8 @@
     padding: 0;
     margin: 0;
     opacity: 1;
-    overflow: hidden
+    overflow: hidden;
+    height: 100%;
 }
 
 .he_slideCaptionDown .he_slideCaptionDown_caption {
@@ -918,7 +919,7 @@
 
 .he_slideAllDown {
     background: #fe7253;
-    width: 360px;
+    width: 300px;
     height: 240px;
     padding: 0;
     margin: 0;
@@ -946,7 +947,8 @@
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    overflow: hidden
+    overflow: hidden;
+    height: 238px;
 }
 
 .he_slideAllDown:hover .he_slideAllDown_img {

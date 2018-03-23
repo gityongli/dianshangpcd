@@ -3,701 +3,654 @@
 <head>
     <meta charset="UTF-8">
     <title>海尔-详情页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/jqzoom.css"/>
     <link rel="stylesheet" href="css/xiangqingye.css">
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/jquery.jqzoom.js"></script>
+    <script src="js/jquery.kxbdmarquee.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/xiangqingye.js"></script>
 </head>
 <body>
-<header>
-    <div class="head">
-        <img src="img/head1.jpg" alt=""/>
-    </div>
-</header>
 <!--导航开始-->
-<nav>
-    <div id="header-bg">
-        <div id="header">
-            <div id="header-left">
-                <ul class="ul">
-                    <li class="li"><a href="#">海尔首页</a></li>
-                    <li class="li">
-                        <a href="#">网站导航</a>
-                        <ul class="ul2" id="ul2">
-                            <li><a href="#">特色购物</a></li>
-                            <li><a href="#">主题频道</a></li>
-                            <li><a href="#">生活助手</a></li>
-                            <li><a href="#">会员服务</a></li>
-                            <li><a href="#">更多热点</a></li>
-                        </ul>
-                    </li>
-                    <li class="li">
-                        <a href="#">合作招商</a>
-                        <ul class="ul2">
-                            <li><a href="#">金融中心</a></li>
-                            <li><a href="#">培训中心</a></li>
-                            <li><a href="#">规划中心</a></li>
-                            <li><a href="#">服务市场</a></li>
-                            <li><a href="#">商家论坛</a></li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="#">客户服务</a>
-                        <ul class="ul2">
-                            <li><a href="#">查找门店</a></li>
-                            <li><a href="#">建议反馈</a></li>
-                            <li><a href="#">在线咨询</a></li>
-                            <li><a href="#">帮助中心</a></li>
-                            <li><a href="#">30天包退</a></li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="#">沧州</a>
-                        <ul class="ul2">
-                            <li><a href="#">河北</a></li>
-                            <li><a href="#">石家庄</a></li>
-                            <li><a href="#">唐山</a></li>
-                            <li><a href="#">秦皇岛</a></li>
-                            <li><a href="#">邯郸</a></li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="denglu.html">请登录</a></li>
-                    <li class="li"><a href="zhuce.html">注册</a></li>
-                    <li class="li"><a href="#">我的订单</a>
-                        <ul class="ul2">
-                            <li>待支付</li>
-                            <li>待收款</li>
-                            <li>待评价</li>
-                            <li>修改订单</li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="#">智慧生活</a>
-                        <ul class="ul2">
-                            <li>智慧海尔</li>
-                            <li>智慧家庭</li>
-                            <li>智慧咨询</li>
-                        </ul>
-                    </li>
-                    <li class="li"><a href="#">苏宁会员</a></li>
-                    <li class="li"><a href="#">易付宝</a></li>
-                    <li class="li"><a href="#">手机苏宁</a>
-                        <ul class="ul2" id="ftx">
-                            <li>
-                                <img src="img/erweima1.png" alt="" class="app"/>
-                                <img src="img/erweima2.png" alt="" class="app"/>
-                                <img src="img/erweima3.jpg" alt="" class="app"/>
-                            </li>
-                        </ul>
-                    </li>
+<nav role="navigation" class="navbar navbar-default <!--navbar-fixed-top-->">
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--<a href="#" class="navbar-brand">-->
+        <!--<span class="glyphicon glyphicon-globe"></span></a>-->
+    </div>
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">海尔首页</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">网站导航<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">主题频道</a></li>
+                    <li><a href="#">生活助手</a></li>
+                    <li><a href="#">会员服务</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">更多热点</a></li>
                 </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">合作招商<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">金融中心</a></li>
+                    <li><a href="#">培训中心</a></li>
+                    <li><a href="#">规划中心</a></li>
+                    <li><a href="#">服务市场</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">商家论坛</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">客户服务<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">查找门店</a></li>
+                    <li><a href="#">建议反馈</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">30天包退</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">商家论坛</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">个人与家用产品<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">电视</a></li>
+                    <li><a href="#">冰箱</a></li>
+                    <li><a href="#">空调</a></li>
+                    <li><a href="#">洗衣机</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">热水器</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">沧州<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">河北</a></li>
+                    <li><a href="#">石家庄</a></li>
+                    <li><a href="#">唐山</a></li>
+                    <li><a href="#">秦皇岛</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">邯郸</a></li>
+                </ul>
+            </li>
+            <li><a href="denglu.html">请登录</a></li>
+            <li><a href="zhuce.html">注册</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">我的订单<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">待支付</a></li>
+                    <li><a href="#">待收款</a></li>
+                    <li><a href="#">待评价</a></li>
+                    <li><a href="#">修改订单</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">购物车</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">智慧生活<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">智慧海尔</a></li>
+                    <li><a href="#">智慧家庭</a></li>
+                    <li><a href="#">智慧咨询</a></li>
+                    <li><a href="#">智慧订购</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">加入购物车</a></li>
+                </ul>
+            </li>
+            <li><a href="#">苏宁会员</a></li>
+            <li><a href="#">易付宝</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">手机苏宁<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#"><img src="img/erweima1.png" alt="" class="app"/></a></li>
+                    <li><a href="#"><img src="img/erweima2.png" alt="" class="app"/></a></li>
+                    <li><a href="#"><img src="img/erweima3.jpg" alt="" class="app"/></a></li>
+                </ul>
+            </li>
+        </ul>
+        <form action="#" method="post" role="search" class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" placeholder="Search Here" class="form-control">
             </div>
-        </div>
+        </form>
     </div>
 </nav>
 <!--导航结束-->
-<div class="main-bg">
-    <div class="main1">
-        <div class="main1-left">
-            <p><img src="img/xq1.png" alt=""/><span>洗衣机专区</span></p>
-        </div>
-        <div class="main1-right">
-            <ul>
-                <li>产品</li>
-                <li>论坛</li>
-                <li>服务与支持</li>
-            </ul>
-        </div>
+<section>
+    <div class="container">
+        <p class="p1">
+            <img src="img/xq1.png" alt="" class="img1">
+            <span class="span1"><a href="index5.html">洗衣机专区</a></span>
+            <span class="span22"><a href="#">产品</a></span>
+            <span class="span3"><a href="#">论坛</a></span>
+            <span class="span4"><a href="#">服务与支持</a></span>
+        </p>
     </div>
-    <div class="main2">
-        <div class="main2-left">
-            <ul class="ul2">
-                <li><a href="index.html">首页></a></li>
-                <li class="li2"><a href="#">洗衣机</a>></li>
-                <li><a href="#">EG100141B69DSUI</a></li>
-            </ul>
-            <div class="main2-left1">
-                <ul class="ul21">
-                    <li><img src="img/xqy5.jpg" alt=""/></li>
-                </ul>
-                <ul class="ul22">
-                    <li>
-                        <img src="img/xqy1.jpg" alt=""/>
-                    </li>
-                    <li>
-                        <img src="img/xqy2.jpg" alt=""/>
-                    </li>
-                    <li>
-                        <img src="img/xqy3.jpg" alt=""/>
-                    </li>
-                    <li>
-                        <img src="img/xqy4.jpg" alt=""/>
-                    </li>
-                </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-1 col-xs-12">
+                <img src="img/xqy5.jpg" alt="">
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12" id="top1">
+                <div class="row">
+                    <div class="col-md-12"><img src="img/xqy1.jpg" alt="" class="img2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><img src="img/xqy2.jpg" alt="" class="img2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><img src="img/xqy3.jpg" alt="" class="img2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><img src="img/xqy4.jpg" alt="" class="img2"></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <p class="p2">10.0公斤直驱变频滚筒洗衣机</p>
+
+                <p class="p3">EG10014B69DSU1</p>
+
+                <p class="p4"><img src="img/xqy6.jpg" alt=""/></p>
+
+                <p class="p5">直驱变频电机</p>
+
+                <p class="p5">USP不间断速洗</p>
+
+                <p class="p5">消毒洗</p>
+
+                <p class="p6">
+                    <span class="span1">参考价</span>
+                    <span class="span2"> ￥5999</span>
+                    <span class="span1">活动，促销通知我</span>
+                    <span class="span3">+ 订阅</span>
+                </p>
+
+                <p class="p7">
+                    <span class="span1">线上店:</span>
+                <span class="span2">
+                <small>JD</small>
+                <span>海尔京东旗舰店</span>
+                </span>
+                </p>
+                <p class="p8"><img src="img/xqy7.jpg" alt=""/>
+                    具体成交价格根据商品参加活动或会员使用优惠卷，
+                    积分等发生变化。</p>
+
+                <p class="p9">最终以渠道订单结算页价格为准</p>
+
+                <p class="p10">
+                    <span class="span1">立即购买</span>
+                    <span class="span2"><img src="img/xqy8.jpg" alt=""/></span>
+                    <span class="span3">手机购买</span>
+                </p>
             </div>
         </div>
-        <div class="main2-right">
-            <p class="p2">10.0公斤直驱变频滚筒洗衣机</p>
-
-            <p class="p3">EG10014B69DSU1</p>
-
-            <p class="p4"><img src="img/xqy6.jpg" alt=""/></p>
-
-            <p class="p5">直驱变频电机</p>
-
-            <p class="p5">USP不间断速洗</p>
-
-            <p class="p5">消毒洗</p>
-
-            <p class="p6">
-                <span class="span1">参考价</span>
-                <span class="span2"> ￥5999</span>
-                <span class="span1">活动，促销通知我</span>
-                <span class="span3">+ 订阅</span>
-            </p>
-
-            <p class="p7">
-                <span class="span1">线上店:</span>
-                <span class="span2">
-                    <small>JD</small>
-                    <span>海尔京东旗舰店</span>
-                </span>
-            </p>
-            <p class="p8"><img src="img/xqy7.jpg" alt=""/>
-                具体成交价格根据商品参加活动或会员使用优惠卷，
-                积分等发生变化。</p>
-
-            <p class="p9">最终以渠道订单结算页价格为准</p>
-
-            <p class="p10">
-                <span class="span1">立即购买</span>
-                <span class="span2"><img src="img/xqy8.jpg" alt=""/></span>
-                <span class="span3">手机购买</span>
-            </p>
+    </div>
+    <div class="container">
+        <div class="one row">
+            <ul class="list-unstyled">
+                <li id="li1" onclick="li1()"><a href="javascript:;">产品介绍</a></li>
+                <li id="li2" onclick="li2()"><a href="javascript:;">规格参数</a></li>
+                <li id="li3" onclick="li3()"><a href="javascript:;">用户口碑</a></li>
+                <li id="li4" onclick="li4()"><a href="javascript:;">常见问题</a></li>
+                <li id="li5" onclick="li5()"><a href="javascript:;">售后支持</a></li>
+            </ul>
         </div>
+
     </div>
-</div>
-<div class="main-bg1">
-    <div class="nav">
-        <ul>
-            <li id="li1" onclick="li1()"><a href="javascript:;">产品介绍</a></li>
-            <li id="li2" onclick="li2()"><a href="javascript:;">规格参数</a></li>
-            <li id="li3" onclick="li3()"><a href="javascript:;">用户口碑</a></li>
-            <li id="li4" onclick="li4()"><a href="javascript:;">常见问题</a></li>
-            <li id="li5" onclick="li5()"><a href="javascript:;">售后支持</a></li>
-        </ul>
-    </div>
-    <div class="box">
-        <div class="main3" id="main1" style="display: block">
-            <ul class="ul3">
-                <li class="li33">
+    <div class="container">
+        <div class="main1" id="main1" style="display: block">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <p class="p33">静音洗涤</p>
 
                     <p class="p34">斐雪派克直驱变频电视机直接驱动内筒，无皮带</p>
 
                     <p class="p34">无碳刷，有效降噪，安静运行不扰生活。</p>
-                </li>
-                <li><img src="img/xqy9.jpg" alt=""/></li>
-            </ul>
-            <ul class="ul3">
-                <li><img src="img/xqy10.jpg" alt=""/></li>
-                <li class="li33">
+                </div>
+                <div class="img9 col-md-6 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="img/xqy9.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="img9 col-md-6 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="img/xqy10.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <p class="p33">摇篮柔洗</p>
 
                     <p class="p34"><90°摇篮柔洗，精致呵护真丝等娇贵衣物。</p>
-                </li>
-            </ul>
-            <ul class="ul3">
-                <li class="li33">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <p class="p33">USP不间断溯溪速洗</p>
 
                     <p class="p34">内筒无间歇正反转配合强劲动力，15分钟即可</p>
 
                     <p class="p34">实现30分钟的洗净效果</p>
-                </li>
-                <li><img src="img/xqy11.jpg" alt=""/></li>
-            </ul>
-            <ul class="ul3">
-                <li><img src="img/xqy12.jpg" alt=""/></li>
-                <li class="li33">
+                </div>
+                <div class="img9 col-md-6 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="img/xqy11.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="img9 col-md-6 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="img/xqy12.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <p class="p33">消毒洗</p>
 
                     <p class="p34">配合消毒液为宝宝服，内衣等进行消毒，深度</p>
 
                     <p class="p34">洁净，护航家人放心穿衣</p>
-                </li>
-            </ul>
+                </div>
+
+            </div>
+
         </div>
-        <div class="main3" id="main2" style="display: none">
-            <div class="pic">
-                <img src="img/msg1.jpg" alt=""/>
+        <div class="main1" id="main2" style="display: none">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="img/msg1.jpg" alt="">
+                    </div>
+                </div>
             </div>
-            <p class="msg">基本信息</p>
-            <ul class="u1">
-                <li><span>类型</span><span>滚筒洗衣机</span><span>系列</span><span>变频系列</span></li>
-                <li class="li2"><span>洗涤容量（kg）</span><span>10</span><span>脱水容量（kg）</span><span>10</span></li>
-                <li><span>烘干容量（kg）</span><span>0</span><span>面板颜色</span><span>水晶银</span></li>
-                <li class="li2"><span>箱体颜色</span><span>银灰</span><span>显示方式</span><span>LED</span></li>
-                <li><span>能效等级</span><span>1级</span><span>最高脱水转速（转/分）</span><span>1400</span></li>
-                <li class="li2"><span>重量（净重/毛重kg）</span><span>75/83</span><span>尺寸（高宽深mm）</span><span>845*595*600</span>
-                </li>
-                <li class="l7"><span>电机类型</span><span>变频直驱</span><span></span><span></span></li>
-            </ul>
-            <p class="msg">程序设置</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="msg">基本信息</p>
+                    <ul class="u1 list-unstyled">
+                        <li><span>类型</span><span>滚筒洗衣机</span><span>系列</span><span>变频系列</span></li>
+                        <li class="li2"><span>洗涤容量（kg）</span><span>10</span><span>脱水容量（kg）</span><span>10</span></li>
+                        <li><span>烘干容量（kg）</span><span>0</span><span>面板颜色</span><span>水晶银</span></li>
+                        <li class="li2"><span>箱体颜色</span><span>银灰</span><span>显示方式</span><span>LED</span></li>
+                        <li><span>能效等级</span><span>1级</span><span>最高脱水转速（转/分）</span><span>1400</span></li>
+                        <li class="li2"><span>重量（净重/毛重kg）</span><span>75/83</span><span>尺寸（高宽深mm）</span><span>845*595*600</span>
+                        </li>
+                        <li class="l7"><span>电机类型</span><span>变频直驱</span><span></span><span></span></li>
+                    </ul>
+                    <p class="msg">程序设置</p>
+                    <ul class="u1 list-unstyled">
+                        <li class="li2">
+                            <p class="msg1">
+                                洗涤程序混合，速洗，羊毛，衬衣，羽绒，消毒洗，加强洗，筒自洁，摇篮柔洗，夏凉被，内衣，童装，空气吸...
+                            </p>
+                        </li>
+                    </ul>
 
-            <p class="msg1">
-                <span class="s1">洗涤程序</span>
-                <span class="s2">混合，速洗，羊毛，衬衣，羽绒，消毒洗，加强洗，筒自洁，摇篮柔洗，夏凉被，内衣，童装，空气吸...</span>
-            </p>
-
-            <p class="msg">创新科技</p>
-            <ul class="u1">
-                <li><span>S-D plus芯变频</span><span>有</span><span>弹力筋内筒</span><span>有</span></li>
-                <li class="li2"><span>智能WiFi</span><span>有</span></li>
-            </ul>
-            <p class="msg">人性化设计</p>
-            <ul class="u1">
-                <li><span>变频静音</span><span>有</span><span>ABT双喷淋设计</span><span>有</span></li>
-                <li class="li2"><span>ATM防霉抗菌窗垫</span><span>有</span><span>USP15分钟极速洗</span><span>有</span></li>
-                <li><span>摇篮柔洗</span><span>有</span><span>安全磁锁</span><span>有</span></li>
-                <li class="li2">夜洗<span></span><span>有</span><span>45°开门</span><span>有</span></li>
-                <li><span>童锁</span><span>有</span><span>预约</span><span>有</span></li>
-                <li class="li2"><span>速度选择</span><span>有</span><span>温度选择</span><span>有</span></li>
-            </ul>
-        </div>
-        <div class="main3" id="main3" style="display: none">
-            <p class="mp3"><span class="pinl">用户评论（8）</span><span></span>试用报告（0）</p>
-
-            <p class="mp4">一条有<span class="pinl">8</span>条对该产品的用户评价，部分评论内容源于互联网公开内容</p>
-
-            <div class="dv1">
-                <ul class="up1">
-                    <li class="lp1">
-                        <p class="dp1">100<span class="span4">%</span></p>
-
-                        <p class="dp2">用户好评率</p>
-                    </li>
-                    <li class="lp2">
-                        <p class="dp3">用户印象</p>
-                    </li>
-                    <li class="lp3">
-                        <p class="dp4">我来评价</p>
-                    </li>
-                </ul>
-                <ul class="up2">
-                    <li><input type="radio" checked/>全部</li>
-                    <li><input type="radio"/>好评（8）</li>
-                    <li><input type="radio"/>中评（0）</li>
-                    <li><input type="radio"/>差评（0）</li>
-                    <li><input type="radio"/>有晒图（0）</li>
-                    <li class="li6">
-                        <select name="" id="">
-                            <option value="">按评论时间</option>
-                            <option value="">按支持人数</option>
-                            <option value="">按评论时间</option>
-                        </select>
-                    </li>
-                </ul>
-            </div>
-            <div class="dv2">
-                <p class="p1">
-                    <span class="sp1">j***s</span>
-                    <span class="sp2">来自</span>
-                    <span class="sp3">海南旗舰店</span>
-                    <span class="sp4">2018-02-23 14:03:19</span>
-                    <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
-                </p>
-
-                <p class="p22">产品评分:★★★★★</p>
-
-                <p class="p33">不错，一直信赖海尔</p>
-            </div>
-            <div class="dv2">
-                <p class="p1">
-                    <span class="sp1">e***q</span>
-                    <span class="sp2">来自</span>
-                    <span class="sp3">海南旗舰店</span>
-                    <span class="sp4">2017-02-23 14:03:19</span>
-                    <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
-                </p>
-
-                <p class="p22">产品评分:★★★★★</p>
-
-                <p class="p33">以前觉得网上的东西都是骗人的，自从颠覆我的认知，性价比高，
-                    东西很好。老板人好，快递也很给力。非常满意</p>
-            </div>
-            <div class="dv2">
-                <p class="p1">
-                    <span class="sp1">j***h</span>
-                    <span class="sp2">来自</span>
-                    <span class="sp3">海南旗舰店</span>
-                    <span class="sp4">2018-04-23 18:01:19</span>
-                    <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
-                </p>
-
-                <p class="p22">产品评分:★★★★★</p>
-
-                <p class="p33">网购很久了，不过呢，在你们家买东西还是第一次，收得到东西之后还不错，哈哈，收藏你们家的。。。</p>
-            </div>
-            <div class="dv2">
-                <p class="p1">
-                    <span class="sp1">G***L</span>
-                    <span class="sp2">来自</span>
-                    <span class="sp3">海南旗舰店</span>
-                    <span class="sp4">2018-01-23 07:03:19</span>
-                    <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
-                </p>
-
-                <p class="p22">产品评分:★★★★★</p>
-
-                <p class="p33">东西好不好，只有自己买过才知道，我是买过的了，所以决定东西还是不错的，如果想购买，可以下单。</p>
-            </div>
-            <div class="dv2">
-                <p class="p1">
-                    <span class="sp1">j***s</span>
-                    <span class="sp2">来自</span>
-                    <span class="sp3">海南旗舰店</span>
-                    <span class="sp4">2017-01-23 00:03:19</span>
-                    <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
-                </p>
-
-                <p class="p22">产品评分:★★★★★</p>
-
-                <p class="p33">不错，一直信赖海尔</p>
-            </div>
-            <div class="dv2">
-                <p class="p1">
-                    <span class="sp1">M***H</span>
-                    <span class="sp2">来自</span>
-                    <span class="sp3">海南旗舰店</span>
-                    <span class="sp4">2017-01-23 10:03:19</span>
-                    <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
-                </p>
-
-                <p class="p22">产品评分:★★★★★</p>
-
-                <p class="p33">昨天收到的，特意今天才来评价的，东西不错。。。</p>
-            </div>
-            <div class="dv2">
-                <p class="p1">
-                    <span class="sp1">Z***V</span>
-                    <span class="sp2">来自</span>
-                    <span class="sp3">海南旗舰店</span>
-                    <span class="sp4">2017-02-23 11:03:19</span>
-                    <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
-                </p>
-
-                <p class="p22">产品评分:★★★★★</p>
-
-                <p class="p33">很满意的一次购物，商品非常真实。值得大家拥有。</p>
+                    <p class="msg">创新科技</p>
+                    <ul class="u1 list-unstyled">
+                        <li><span>S-D plus芯变频</span><span>有</span><span>弹力筋内筒</span><span>有</span></li>
+                        <li class="li2"><span>智能WiFi</span><span>有</span></li>
+                    </ul>
+                    <p class="msg">人性化设计</p>
+                    <ul class="u1">
+                        <li><span>变频静音</span><span>有</span><span>ABT双喷淋设计</span><span>有</span></li>
+                        <li class="li2"><span>ATM防霉抗菌窗垫</span><span>有</span><span>USP15分钟极速洗</span><span>有</span></li>
+                        <li><span>摇篮柔洗</span><span>有</span><span>安全磁锁</span><span>有</span></li>
+                        <li class="li2">夜洗<span></span><span>有</span><span>45°开门</span><span>有</span></li>
+                        <li><span>童锁</span><span>有</span><span>预约</span><span>有</span></li>
+                        <li class="li2"><span>速度选择</span><span>有</span><span>温度选择</span><span>有</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="main3" id="main4" style="display: none">
-            <div class="dv3">
-                <ul class="ul4">
-                    <li><p>滚筒洗衣机洗衣服完成后会自动断电吗？</p></li>
-                    <li><p>滚筒洗衣机工作时中途停电，来电后是继续工作还是重新开始工作？</p></li>
-                    <li><p>滚筒洗衣机工作完成后，门锁灯亮度减弱不熄灭的原因</p></li>
-                    <li><p>滚筒洗衣机新购机有异味的原因</p></li>
-                    <li><p>滚筒洗衣机新机开箱有水的原因</p></li>
-                    <li><p>三口之家是否有必要选购大容量得而洗衣机？</p></li>
-                    <li><p>可以把各种衣物一起洗涤吗？</p></li>
-                    <li><p>波轮洗衣机洗涤容量要留余地的原因</p></li>
-                    <li><p>洗衣机电源在线在使用，保养时的注意事项</p></li>
-                    <li><p>电压不稳定对洗衣机工作可能造成的影响</p></li>
-                    <li><p>滚筒洗衣机洗衣服完成后会自动断电吗？</p></li>
-                    <li><p>洗衣机脱水洗涤物还有少量水的原因</p></li>
-                    <li><p>洗衣机放置和使用的省电窍门</p></li>
-                    <li><p>洗衣机内有异常声音的排查方法</p></li>
-                    <li><p>洗衣机不使用时为什么要断水断电</p></li>
-                    <li><p>渡轮洗衣机使用小常识：洗涤剂要适量</p></li>
-                    <li><p>不用洗衣粉的洗衣机在进水洗涤过程中排出的水是否可以继续使用？</p></li>
-                </ul>
+        <div class="main1" id="main3" style="display: none">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mp3"><span class="pinl">用户评论（8）</span><span></span>试用报告（0）</p>
+
+                    <p class="mp4">一条有<span class="pinl">8</span>条对该产品的用户评价，部分评论内容源于互联网公开内容</p>
+
+                    <div class="dv1">
+                        <ul class="up1">
+                            <li class="lp1">
+                                <p class="dp1">100<span class="span4">%</span></p>
+
+                                <p class="dp2">用户好评率</p>
+                            </li>
+                            <li class="lp2">
+                                <p class="dp3">用户印象</p>
+                            </li>
+                            <li class="lp3">
+                                <p class="dp4">我来评价</p>
+                            </li>
+                        </ul>
+                        <ul class="up2">
+                            <li><input type="radio" checked/>全部</li>
+                            <li><input type="radio"/>好评（8）</li>
+                            <li><input type="radio"/>中评（0）</li>
+                            <li><input type="radio"/>差评（0）</li>
+                            <li><input type="radio"/>有晒图（0）</li>
+                            <li class="li6">
+                                <select name="" id="">
+                                    <option value="">按评论时间</option>
+                                    <option value="">按支持人数</option>
+                                    <option value="">按评论时间</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dv2">
+                        <p class="p1">
+                            <span class="sp1">j***s</span>
+                            <span class="sp2">来自</span>
+                            <span class="sp3">海南旗舰店</span>
+                            <span class="sp4">2018-02-23 14:03:19</span>
+                            <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
+                        </p>
+
+                        <p class="p22">产品评分:★★★★★</p>
+
+                        <p class="p333">不错，一直信赖海尔</p>
+                    </div>
+                    <div class="dv2">
+                        <p class="p1">
+                            <span class="sp1">e***q</span>
+                            <span class="sp2">来自</span>
+                            <span class="sp3">海南旗舰店</span>
+                            <span class="sp4">2017-02-23 14:03:19</span>
+                            <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
+                        </p>
+
+                        <p class="p22">产品评分:★★★★★</p>
+
+                        <p class="p333">以前觉得网上的东西都是骗人的，自从颠覆我的认知，性价比高，
+                            东西很好。老板人好，快递也很给力。非常满意</p>
+                    </div>
+                    <div class="dv2">
+                        <p class="p1">
+                            <span class="sp1">j***h</span>
+                            <span class="sp2">来自</span>
+                            <span class="sp3">海南旗舰店</span>
+                            <span class="sp4">2018-04-23 18:01:19</span>
+                            <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
+                        </p>
+
+                        <p class="p22">产品评分:★★★★★</p>
+
+                        <p class="p333">网购很久了，不过呢，在你们家买东西还是第一次，收得到东西之后还不错，哈哈，收藏你们家的。。。</p>
+                    </div>
+                    <div class="dv2">
+                        <p class="p1">
+                            <span class="sp1">G***L</span>
+                            <span class="sp2">来自</span>
+                            <span class="sp3">海南旗舰店</span>
+                            <span class="sp4">2018-01-23 07:03:19</span>
+                            <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
+                        </p>
+
+                        <p class="p22">产品评分:★★★★★</p>
+
+                        <p class="p333">东西好不好，只有自己买过才知道，我是买过的了，所以决定东西还是不错的，如果想购买，可以下单。</p>
+                    </div>
+                    <div class="dv2">
+                        <p class="p1">
+                            <span class="sp1">j***s</span>
+                            <span class="sp2">来自</span>
+                            <span class="sp3">海南旗舰店</span>
+                            <span class="sp4">2017-01-23 00:03:19</span>
+                            <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
+                        </p>
+
+                        <p class="p22">产品评分:★★★★★</p>
+
+                        <p class="p333">不错，一直信赖海尔</p>
+                    </div>
+                    <div class="dv2">
+                        <p class="p1">
+                            <span class="sp1">M***H</span>
+                            <span class="sp2">来自</span>
+                            <span class="sp3">海南旗舰店</span>
+                            <span class="sp4">2017-01-23 10:03:19</span>
+                            <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
+                        </p>
+
+                        <p class="p22">产品评分:★★★★★</p>
+
+                        <p class="p333">昨天收到的，特意今天才来评价的，东西不错。。。</p>
+                    </div>
+                    <div class="dv2">
+                        <p class="p1">
+                            <span class="sp1">Z***V</span>
+                            <span class="sp2">来自</span>
+                            <span class="sp3">海南旗舰店</span>
+                            <span class="sp4">2017-02-23 11:03:19</span>
+                            <span class="sp5"><img src="img/xin1.jpg" alt=""/></span>
+                        </p>
+
+                        <p class="p22">产品评分:★★★★★</p>
+
+                        <p class="p333">很满意的一次购物，商品非常真实。值得大家拥有。</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="main3" id="main5" style="display: none">
-            <div class="dv5">
-                <p class="p5">说明书下载</p>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>38.51MB</span>
-                        <span>HDF</span>
-                        <span>2017-11-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>48.51MB</span>
-                        <span>KDF</span>
-                        <span>2017-12-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>58.51MB</span>
-                        <span>PDF</span>
-                        <span>2017-01-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>38.51MB</span>
-                        <span>ODF</span>
-                        <span>2017-02-22</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>38.51MB</span>
-                        <span>UDF</span>
-                        <span>2017-03-22</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>38.51MB</span>
-                        <span>YDF</span>
-                        <span>2017-04-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>38.51MB</span>
-                        <span>RDF</span>
-                        <span>2017-05-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>38.51MB</span>
-                        <span>WDF</span>
-                        <span>2017-06-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>38.51MB</span>
-                        <span>QDF</span>
-                        <span>2017-07-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>48.51MB</span>
-                        <span>FDF</span>
-                        <span>2017-08-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>38.51MB</span>
-                        <span>ADF</span>
-                        <span>2017-09-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>38.51MB</span>
-                        <span>MSD</span>
-                        <span>2018-02-28</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
-                <ul class="ul5">
-                    <li class="li1">
-                        <span>文件名</span>
-                        <span>文件大小</span>
-                        <span>文件格式</span>
-                        <span>更新日期</span>
-                        <span>下载链接</span>
-                    </li>
-                    <li class="li2">
-                        <span>EG10014B9DSU1</span>
-                        <span>40.51MB</span>
-                        <span>CFD</span>
-                        <span>2018-03-8</span>
-                        <span class="span5">点击下载</span>
-                    </li>
-                </ul>
+        <div class="main1" id="main4" style="display: none">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="ul4 list-unstyled">
+                        <li><p>滚筒洗衣机洗衣服完成后会自动断电吗？</p></li>
+                        <li><p>滚筒洗衣机工作时中途停电，来电后是继续工作还是重新开始工作？</p></li>
+                        <li><p>滚筒洗衣机工作完成后，门锁灯亮度减弱不熄灭的原因</p></li>
+                        <li><p>滚筒洗衣机新购机有异味的原因</p></li>
+                        <li><p>滚筒洗衣机新机开箱有水的原因</p></li>
+                        <li><p>三口之家是否有必要选购大容量得而洗衣机？</p></li>
+                        <li><p>可以把各种衣物一起洗涤吗？</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main1" id="main5" style="display: none">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="p55">说明书下载</p>
+                    <ul class="ul5">
+                        <li class="li1">
+                            <span>文件名</span>
+                            <span>文件大小</span>
+                            <span>文件格式</span>
+                            <span>更新日期</span>
+                            <span>下载链接</span>
+                        </li>
+                        <li class="li2">
+                            <span>EG10014B9DSU1</span>
+                            <span>38.51MB</span>
+                            <span>HDF</span>
+                            <span>2017-11-28</span>
+                            <span class="span5">点击下载</span>
+                        </li>
+                    </ul>
+                    <ul class="ul5">
+                        <li class="li1">
+                            <span>文件名</span>
+                            <span>文件大小</span>
+                            <span>文件格式</span>
+                            <span>更新日期</span>
+                            <span>下载链接</span>
+                        </li>
+                        <li class="li2">
+                            <span>EG10014B9DSU1</span>
+                            <span>48.51MB</span>
+                            <span>KDF</span>
+                            <span>2017-12-28</span>
+                            <span class="span5">点击下载</span>
+                        </li>
+                    </ul>
+                    <ul class="ul5">
+                        <li class="li1">
+                            <span>文件名</span>
+                            <span>文件大小</span>
+                            <span>文件格式</span>
+                            <span>更新日期</span>
+                            <span>下载链接</span>
+                        </li>
+                        <li class="li2">
+                            <span>EG10014B9DSU1</span>
+                            <span>58.51MB</span>
+                            <span>PDF</span>
+                            <span>2017-01-28</span>
+                            <span class="span5">点击下载</span>
+                        </li>
+                    </ul>
+
+                    <ul class="ul5">
+                        <li class="li1">
+                            <span>文件名</span>
+                            <span>文件大小</span>
+                            <span>文件格式</span>
+                            <span>更新日期</span>
+                            <span>下载链接</span>
+                        </li>
+                        <li class="li2">
+                            <span>EG10014B9DSU1</span>
+                            <span>38.51MB</span>
+                            <span>YDF</span>
+                            <span>2017-04-28</span>
+                            <span class="span5">点击下载</span>
+                        </li>
+                    </ul>
+                    <ul class="ul5">
+                        <li class="li1">
+                            <span>文件名</span>
+                            <span>文件大小</span>
+                            <span>文件格式</span>
+                            <span>更新日期</span>
+                            <span>下载链接</span>
+                        </li>
+                        <li class="li2">
+                            <span>EG10014B9DSU1</span>
+                            <span>38.51MB</span>
+                            <span>RDF</span>
+                            <span>2017-05-28</span>
+                            <span class="span5">点击下载</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+
 <footer>
-    <div class="foot">
-        <ul class="fu">
-            <li class="fl"><a href="#">冰箱冷柜</a></li>
-            <li><a href="#">单门冰箱</a></li>
-            <li><a href="#">双门冰箱</a></li>
-            <li><a href="#">对开门冰箱</a></li>
-            <li><a href="#">十字对开门冰箱</a></li>
-            <li><a href="#">立式冷柜</a></li>
-            <li><a href="#">卧式冷柜</a></li>
-            <li><a href="#">展示柜</a></li>
-            <li><a href="#">冰吧</a></li>
-            <li><a href="#">酒柜</a></li>
-            <li><a href="#">微酒库</a></li>
-        </ul>
-        <ul class="fu">
-            <li class="fl"><a href="#">洗衣机专区</a></li>
-            <li><a href="#">滚筒洗衣机</a></li>
-            <li><a href="#">波轮洗衣机</a></li>
-            <li><a href="#">干衣机</a></li>
-            <li class="fl"><a href="#">空调专区</a></li>
-            <li><a href="#">壁挂式空调</a></li>
-            <li><a href="#">柜式空调</a></li>
-            <li><a href="#">家用中央空调</a></li>
-            <li><a href="#">保湿机</a></li>
-            <li><a href="#">移动空调</a></li>
-            <li><a href="#">中央空调</a></li>
-        </ul>
-        <ul class="fu">
-            <li class="fl"><a href="#">热水器专区</a></li>
-            <li><a href="#">电热水器</a></li>
-            <li><a href="#">燃气热水器</a></li>
-            <li><a href="#">太阳能热水器</a></li>
-            <li><a href="#">采暖炉</a></li>
-            <li><a href="#">空气能热水器</a></li>
-            <li class="fl"><a href="#">电视专区</a></li>
-            <li><a href="#">曲面电视</a></li>
-            <li><a href="#">4k高清电视</a></li>
-            <li><a href="#">智能电视</a></li>
-            <li><a href="#">蓝光电视</a></li>
-        </ul>
-        <ul class="fu">
-            <li class="fl"><a href="#">智慧家电专区</a></li>
-            <li><a href="#">大家电</a></li>
-            <li><a href="#">居家产品</a></li>
-            <li><a href="#">空气产品</a></li>
-            <li class="fl"><a href="#">大家电</a></li>
-            <li><a href="#">智能冰箱</a></li>
-            <li><a href="#">智能空调</a></li>
-            <li><a href="#">智能烤箱</a></li>
-            <li><a href="#">智能洗衣机</a></li>
-            <li><a href="#">智能热水器</a></li>
-            <li><a href="#">微酒库</a></li>
-        </ul>
-        <ul class="fu">
-            <li class="fl"><a href="#">商业解决方案</a></li>
-            <li><a href="#">中央空调</a></li>
-            <li><a href="#">商用电视</a></li>
-            <li><a href="#">商用洗涤</a></li>
-            <li><a href="#">商用电脑</a></li>
-            <li><a href="#">生物医疗</a></li>
-            <li><a href="#">U-home</a></li>
-            <li><a href="#">商用净水设备</a></li>
-            <li><a href="#">商用热泵</a></li>
-            <li><a href="#">海尔地产</a></li>
-            <li><a href="#">海尔热门</a></li>
-        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">冰箱冷柜</a></li>
+                    <li><a href="#">单门冰箱</a></li>
+                    <li><a href="#">双门冰箱</a></li>
+                    <li><a href="#">对开门冰箱</a></li>
+                    <li><a href="#">十字对开门冰箱</a></li>
+                    <li><a href="#">立式冷柜</a></li>
+                    <li><a href="#">卧式冷柜</a></li>
+                    <li><a href="#">展示柜</a></li>
+                    <li><a href="#">冰吧</a></li>
+                    <li><a href="#">酒柜</a></li>
+                    <li><a href="#">微酒库</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">洗衣机专区</a></li>
+                    <li><a href="#">滚筒洗衣机</a></li>
+                    <li><a href="#">波轮洗衣机</a></li>
+                    <li><a href="#">干衣机</a></li>
+                    <li class="fl"><a href="#">空调专区</a></li>
+                    <li><a href="#">壁挂式空调</a></li>
+                    <li><a href="#">柜式空调</a></li>
+                    <li><a href="#">家用中央空调</a></li>
+                    <li><a href="#">保湿机</a></li>
+                    <li><a href="#">移动空调</a></li>
+                    <li><a href="#">中央空调</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">热水器专区</a></li>
+                    <li><a href="#">电热水器</a></li>
+                    <li><a href="#">燃气热水器</a></li>
+                    <li><a href="#">太阳能热水器</a></li>
+                    <li><a href="#">采暖炉</a></li>
+                    <li><a href="#">空气能热水器</a></li>
+                    <li class="fl"><a href="#">电视专区</a></li>
+                    <li><a href="#">曲面电视</a></li>
+                    <li><a href="#">4k高清电视</a></li>
+                    <li><a href="#">智能电视</a></li>
+                    <li><a href="#">蓝光电视</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">智慧家电专区</a></li>
+                    <li><a href="#">大家电</a></li>
+                    <li><a href="#">居家产品</a></li>
+                    <li><a href="#">空气产品</a></li>
+                    <li class="fl"><a href="#">大家电</a></li>
+                    <li><a href="#">智能冰箱</a></li>
+                    <li><a href="#">智能空调</a></li>
+                    <li><a href="#">智能烤箱</a></li>
+                    <li><a href="#">智能洗衣机</a></li>
+                    <li><a href="#">智能热水器</a></li>
+                    <li><a href="#">微酒库</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">商业解决方案</a></li>
+                    <li><a href="#">中央空调</a></li>
+                    <li><a href="#">商用电视</a></li>
+                    <li><a href="#">商用洗涤</a></li>
+                    <li><a href="#">商用电脑</a></li>
+                    <li><a href="#">生物医疗</a></li>
+                    <li><a href="#">U-home</a></li>
+                    <li><a href="#">商用净水设备</a></li>
+                    <li><a href="#">商用热泵</a></li>
+                    <li><a href="#">海尔地产</a></li>
+                    <li><a href="#">海尔热门</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                    <li class="fl"><a href="#">服务</a></li>
+                    <li><a href="#">认证产品</a></li>
+                    <li><a href="#">预约安装</a></li>
+                    <li><a href="#">在线报修</a></li>
+                    <li><a href="#">特色服务</a></li>
+                    <li><a href="#">服务状态查询</a></li>
+                    <li><a href="#">海尔服务店</a></li>
+                    <li><a href="#">海尔专卖店</a></li>
+                    <li><a href="#">智慧家庭体验店</a></li>
+                    <li><a href="#">应用中心</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>
-<div class="footer">
-    <div class="foot1">
+<div class="footer1">
+    <div class="foot1 container">
         <p>
             <a href="#">关于海尔</a>
             <a href="#">品牌专区</a>

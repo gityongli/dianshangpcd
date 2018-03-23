@@ -43,7 +43,7 @@ $(function () {
     $(".ul1 li").mouseout(function () {
         time = setInterval(run, 1500)
     });
-/////////////////////////////////////////////////////////////////////js选项卡
+/////////////////////////////////////////////////////////////////////jq选项卡
     $(function () {
         $(".main li").mouseenter(function () {
             var a = $(this).index();
@@ -51,23 +51,44 @@ $(function () {
         })
     });
 });
-function lan1(){
-    document.getElementById("hover").style.transform="transformX(0px)";
-}
-function lan2() {
-    document.getElementById("hover").style.transform = "translateX(238px)";
-}
-function lan3() {
-    document.getElementById("hover").style.transform = "translateX(476px)";
-}
-function lan4() {
-    document.getElementById("hover").style.transform = "translateX(714px)";
-}
-function lan5() {
-    document.getElementById("hover").style.transform = "translateX(952px)";
-}
 ///////////////////插件滚动////////////////////////////
 
-/*-----------------------------------首页结束-------------------------------------*/
+/*----------------xxk-------------------*/
+function lan1(){
+    document.getElementById("main1").style.display="block";
+    document.getElementById("main2").style.display="none";
+    document.getElementById("main3").style.display="none";
+    document.getElementById("main4").style.display="none";
+    document.getElementById("main5").style.display="none";
+}
+function lan2(){
+    document.getElementById("main2").style.display="block";
+    document.getElementById("main1").style.display="none";
+    document.getElementById("main3").style.display="none";
+    document.getElementById("main4").style.display="none";
+    document.getElementById("main5").style.display="none";
+}
+function lan3(){
+    document.getElementById("main3").style.display="block";
+    document.getElementById("main1").style.display="none";
+    document.getElementById("main2").style.display="none";
+    document.getElementById("main4").style.display="none";
+    document.getElementById("main5").style.display="none";
+}
+function lan4(){
+    document.getElementById("main4").style.display="block";
+    document.getElementById("main1").style.display="none";
+    document.getElementById("main2").style.display="none";
+    document.getElementById("main3").style.display="none";
+    document.getElementById("main5").style.display="none";
+}
+function lan5(){
+    document.getElementById("main5").style.display="block";
+    document.getElementById("main1").style.display="none";
+    document.getElementById("main2").style.display="none";
+    document.getElementById("main3").style.display="none";
+    document.getElementById("main4").style.display="none";
+}
+//////////////////////////////////////////////////
 
 
