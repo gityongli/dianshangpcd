@@ -477,6 +477,15 @@ a {
 a:hover{
     text-decoration: none;
 }
+
+
+.start a.active {
+    color: red;
+}
+
+.start a.s {
+    color: blue;
+}
 /*---------------------------------------*/
 footer {
     width: 100%;

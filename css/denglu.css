@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #f2f2f2;
+    background: #229cf2;
 }
 
 a:hover {
@@ -51,6 +51,12 @@ header .container{
     display: block;
 }
 
+
+.one span {
+    color: red;
+    font-family: 黑体;
+    font-size: 12px;
+}
 .one {
     width: 800px;
     height: 450px;
@@ -79,8 +85,8 @@ label {
 }
 
 form {
-    width: 600px;
-    height: 478px;
+    width: 720px;
+    height: 480px;
     position: absolute;
     left: 50px;
 }
@@ -116,29 +122,29 @@ button {
     background: #32beff;
 }
 
-.p3 {
-    position: absolute;
-    top: 20px;
-}
+/*.p3 {*/
+    /*position: absolute;*/
+    /*top: 20px;*/
+/*}*/
 
-.p4 {
-    position: absolute;
-    top: 90px;
-}
+/*.p4 {*/
+    /*position: absolute;*/
+    /*top: 90px;*/
+/*}*/
 
-.p5 {
-    position: absolute;
-    top: 160px;
-}
+/*.p5 {*/
+    /*position: absolute;*/
+    /*top: 160px;*/
+/*}*/
 
-.p6 {
-    position: absolute;
-    top: 230px;
-}
+/*.p6 {*/
+    /*position: absolute;*/
+    /*top: 230px;*/
+/*}*/
 
 .p7 {
     position: absolute;
-    top: 300px;
+    top: 285px;
     left: 180px;
     color: #000;
     font-size: 20px;

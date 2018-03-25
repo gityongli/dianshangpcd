@@ -44,7 +44,11 @@ header .container{
 
 
 
-
+.one span {
+    color: red;
+    font-family: 黑体;
+    font-size: 12px;
+}
 .p1{
     height: 100px;
     line-height: 100px;
@@ -52,10 +56,11 @@ header .container{
     color:#000;
     font-weight: bold;
     text-align: center;
+
 }
 .one {
     width: 800px;
-    height: 450px;
+    height: 460px;
     background: #fff;
     margin: 0 auto;
     position: relative;
@@ -68,6 +73,8 @@ header .container{
     color: #000;
     font-weight: bold;
     text-align: center;
+    margin-top: 160px;
+
 }
 label{
     width: 150px;
@@ -79,21 +86,21 @@ label{
     color: #5a5a5a;
 }
 form{
-    width: 600px;
-    height: 478px;
+    width: 720px;
+    height: 460px;
     position: absolute;
     left:50px;
 
 }
 
 input[type="text"]{
-    width: 358px;
+    width: 330px;
     height: 40px;
     border:1px solid #ccc;
 
 }
 input[type="password"]{
-    width: 358px;
+    width: 330px;
     height: 40px;
     border:1px solid #ccc;
 }
@@ -103,36 +110,36 @@ input[type="tel"]{
     border:1px solid #ccc;
 }
 button{
-    width: 358px;
+    width: 330px;
     height: 50px;
     background:#32beff;
 }
-.p3{
-    position: absolute;
-    top:20px;
-}
-.p4{
-    position: absolute;
-    top:90px;
-}
-.p5{
-    position: absolute;
-    top:160px;
-}
-.p6{
-    position: absolute;
-    top:230px;
-}
+/*.p3{*/
+    /*position: absolute;*/
+    /*top:20px;*/
+/*}*/
+/*.p4{*/
+    /*position: absolute;*/
+    /*top:90px;*/
+/*}*/
+/*.p5{*/
+    /*position: absolute;*/
+    /*top:160px;*/
+/*}*/
+/*.p6{*/
+    /*position: absolute;*/
+    /*top:230px;*/
+/*}*/
 .p7{
     position: absolute;
-    top:300px;
+    top:260px;
     left:180px;
     color:#000;
     font-size: 20px;
 }
 .p8{
     position: absolute;
-    top:380px;
+    top:350px;
     left:14%;
 }
 .one a{

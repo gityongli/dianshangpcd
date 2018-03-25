@@ -50,3 +50,15 @@ $(function(){
         $(this).stop().children("ul").slideUp(200)
     });
 })
+///////////////////////////////////////////////////////////
+$(function () {
+    $(".start a").hover(function () {
+        $(this).addClass("active").prevAll().addClass("active")
+    }, function () {
+        $(this).removeClass("active").prevAll().removeClass("active")
+    });
+    $(".start a").bind("click", function () {
+        $(this).addClass("s").prevAll().addClass("s");
+        $(this).nextAll().removeClass("s")
+    })
+})
