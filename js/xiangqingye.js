@@ -50,7 +50,7 @@ $(function(){
         $(this).stop().children("ul").slideUp(200)
     });
 })
-///////////////////////////////////////////////////////////
+/*----------------------jQuery选项卡-------------------*/
 $(function () {
     $(".start a").hover(function () {
         $(this).addClass("active").prevAll().addClass("active")
