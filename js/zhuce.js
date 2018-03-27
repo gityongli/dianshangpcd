@@ -1,6 +1,4 @@
-/**
- * Created by lenovo on 18/3/25 025.
- */
+
 function validate() {
     var name = document.getElementById("name").value;
     var phone=document.getElementById("phone").value;
@@ -10,7 +8,6 @@ function validate() {
     }else if(pwd=="12345678"){
         window.open("index.html")
     }else {
-        /* alert("请认真填写信息")*/
     }
 }
 function checkName() {
