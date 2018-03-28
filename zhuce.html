@@ -34,12 +34,12 @@
             <div class="col-md-8 col-md-push-1">
                 <p class="p1">一个账号便利享受Haier所有服务</p>
                 <div class="one">
-                    <form action="#" method="post">
+                    <form action="#" method="post" id="one">
                         <p class="user">
                             <label>用户名：</label>
                             <input type="text" id="name" onkeyup="checkName()" required><span id="nameSpan"></span></p>
                         <p class="p3">
-                            <label>手机号码</label>
+                            <label>手机号码：</label>
                             <input type="text" id="phone" placeholder="手机号必须是以15开头的" pattern="^(15[0|1|2|3|5|6|7|8|9])\d{8}$" required/>
                         </p>
                         <p class="p4"><label>密码：</label>
@@ -49,25 +49,24 @@
                             <input type="password" id="pwd2" onkeyup="checkPwd2()" required><span id="pwd2Span"></span>
                         </p>
                         <p class="p6">
-                            <label>邮箱</label>
+                            <label>邮箱：</label>
                             <input type="text" id="email" onkeyup="checkEmail()" required><span id="emailSpan"></span>
                         </p>
                         <p class="p7">
-                            <button id="zhu"  onclick="validate()">注册</button>
+                            <input type="submit" value="注册" id="deng"  onclick="validate()">
                         </p>
                         <p class="p8">点击 “注册” 表示同意
                             <a href="#">《海尔注册用户服务条款》</a>
                             <a href="#">《法律声明及隐私权政策》</a>
                         </p>
-                        <p class="p2">Haier账号支持所有产品服务</p>
                     </form>
-
                 </div>
-
+                <p class="p2">Haier账号支持所有产品服务</p>
             </div>
         </div>
     </div>
 </div>
+
 <div class="footer1">
     <div class="foot1 container">
         <p>

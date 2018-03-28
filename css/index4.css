@@ -22,17 +22,14 @@ body{
 }
 
 .one li {
-    width: 19.5%;
+    width: 18.5%;
     height: 50px;
     display: inline-block;
     text-align: center;
     line-height: 50px;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
-.one li:hover {
-    background: #fff;
-}
 
 a {
     text-decoration: none;
@@ -91,6 +88,9 @@ a:hover {
     color: green;
     margin-left: 30%;
 }
+.img11{
+    width: 100%;
+}
 /*--------------------------------------*/
 #banner5 .container{
     border-top: 2px solid #2572b7;
@@ -123,13 +123,13 @@ footer ul li a {
 }
 .footer1 {
     width: 100%;
-    height: 55px;
+    height: 20%;
     background: #2b2c2d!important;
     margin: 0 auto;
 }
 .foot1 p {
     text-align: center;
-    height: 52px;
+    height: 100%;
     line-height: 52px;
     margin: 0 auto;
     color: #d1d1d1;
@@ -142,4 +142,20 @@ footer ul li a {
 }
 .footer1 .container{
     background: none!important;
+}
+@media screen and (max-width: 1024px) {
+    footer {
+        width: 100%;
+        height:100%;
+        background: #525455;
+        background-size:100% 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .footer1 p{
+        width: 100%;
+        height:100%;
+        background: #2b2c2d;
+        background-size:100% 100%;
+    }
 }
