@@ -481,11 +481,11 @@ a:hover{
 
 
 .start a.active {
-    color: red;
+    color:blue;
 }
 
 .start a.s {
-    color: blue;
+    color:red;
 }
 /*---------------------------------------*/
 footer {

@@ -35,5 +35,16 @@ function li5(){
     document.getElementById("main3").style.display="none";
     document.getElementById("main4").style.display="none";
 }
-//////////////////////////////////////////////////
+////////////////三星点评//////////////////////////////////
 
+$(function () {
+    $(".start a").hover(function () {
+        $(this).addClass("active").prevAll().addClass("active")
+    }, function () {
+        $(this).removeClass("active").prevAll().removeClass("active")
+    });
+    $(".start a").bind("click", function () {
+        $(this).addClass("s").prevAll().addClass("s");
+        $(this).nextAll().removeClass("s")
+    })
+})
