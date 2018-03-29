@@ -7,7 +7,7 @@ $(window).scroll(function(){
         $(".back-to-top").fadeOut(500)
     }
 });
-$(".back-to-top").click(function(){
+$(window).click(function(){
     $("body").animate({scrollTop:"0"},5000)
 });
 /*----------------------------js选项卡---------------------------------*/
