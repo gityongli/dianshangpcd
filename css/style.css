@@ -8,10 +8,10 @@
     border: 1px solid #000;
     position: relative;
     box-sizing: border-box;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;  /*谷歌*/
+    -moz-transition: all .4s ease-in-out;    /*火狐*/
+    -o-transition: all .4s ease-in-out;     /*苹果*/
+    -ms-transition: all .4s ease-in-out;   /*IE*/
     transition: all .4s ease-in-out;
     overflow: hidden
 }

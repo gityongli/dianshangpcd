@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0 ;
+}
+#nav li a{
+    font-size:12px;
+}
+#li5{
+    margin-left: 7% !important;
+}
+#li5 span,#li6 span,#li10 span{
+    color: #ff6600 !important;;
+}

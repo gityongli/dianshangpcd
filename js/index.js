@@ -10,15 +10,6 @@ $(window).scroll(function(){
 $(".back-to-top").click(function(){
     $("body").animate({scrollTop:"0"},5000)
 });
-/*-----------------------------jQuery选项卡-----------------------------*/
-$(function () {
-    $(function () {
-        $(".main li").mouseenter(function () {
-            var a = $(this).index();
-            $(".main-bg1 div").eq(a).show().siblings().not("ul").hide();
-        })
-    });
-});
 /*----------------------------js选项卡---------------------------------*/
 function lan1(){
     document.getElementById("main1").style.display="block";
